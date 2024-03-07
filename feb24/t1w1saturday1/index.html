@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <!-- Style tag or internal styling -->
+   <!--     <style>
+        h3 {
+            color:red;
+        }
+    </style>-->
+    <!-- External stylesheet, needs to exist in project as a file-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Inline styling -->
     <h1><em>Hannah was here</em></h1>
-    <h3>I've had a few hisscups creating this but I'm back on track?</h3>
+    <!-- Below is an example of how inline styling overrides style tag as it is more specific-->
+    <!--  <h3 style="color:green">I've had a few hiccups creating this but I'm back on track?</h3>-->
+    <h3 id="bananas">I've had a few hiccups creating this but I'm back on track?</h3>
+    <h3 class="coolclass">Another heading</h3>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>Dignissimos autem harum neque accusamus necessitatibus praesentium quasi at.</strong> Voluptatum deserunt illo odit provident dignissimos natus, expedita, <i>quas ut nostrum rem tempora!</i>
     </p>
@@ -15,5 +27,25 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugit, fugiat iste aut numquam veniam illo qui officia tenetur blanditiis minus dolores? Nostrum, amet ipsa sit minus fugiat nobis reprehenderit!</br>
     </p>
     <img src="./mushroom.jpeg" alt="No image" style="width:200px;height:200px;">
+    <ul>
+        <li>
+            Pizza
+        </li>
+        <li>
+            Pasta
+        </li>
+        <li>
+            Sushi
+        </li>
+        <li>
+            Chicken
+        </li>
+        <li>
+            Donuts
+        </li>
+        <li>
+            Curry
+        </li>
+    </ul>
 </body>
 </html>

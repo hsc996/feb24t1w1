@@ -1,0 +1,68 @@
+/* fills the screen and removes gaps */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 10vw;
+    width: 10vw;
+}
+
+p {
+    font-size: 1rem;
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+em > strong > p {
+    font-size: 5px;
+}
+
+
+li {
+    background-color:rgb(248, 215, 132);
+}
+
+/* n is a placeholder
+For every third list item
+*/
+li:nth-child(3n) {
+    background-color: palegoldenrod;
+}
+/* The latter selector in the file will be applied if both are applicable */
+li:nth-child(even) {
+    background-color: lightcoral;
+}
+
+/* To change to colour of dots, the double colon here signifies use of pseudo-class */
+li::marker {
+    color: purple;
+}
+
+/* Can combine both but order matters --> but pseudo-element at the end (switching the order would indicate you want to apply to every second marker, though there is only one marker per item in a list */
+li:nth-child(even)::marker {
+    color: royalblue;
+}
+
+h3 {
+    color:red;
+    background-color: aquamarine;
+}
+
+#bananas {
+    color: blue;
+}
+
+.coolclass {
+    color: darkred;
+}
+
+h1 {
+    color:blue;
+    background-color: rgb(250, 210, 210);
+}
+
+h1 {
+    color: blueviolet
+}
